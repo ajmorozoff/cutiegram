@@ -9,7 +9,7 @@ import { Feed } from '../feed';
 const theme = createMuiTheme({
     palette: {
         primary: {
-            main: '#FFC001',
+            main: '#ACEDE8',
         },
         secondary: {
             main: '#01D0C0'

@@ -15,12 +15,8 @@ const NavBar = (props) => {
             }}
             >
                 
-                    <Icon
-                        style={{ 
-                            fontSize: '2.5rem'
-                        }}
-                    >
-                        home
+                    <Icon color='secondary' style={{ fontSize: '2.5rem'}}>
+                        pets
                     </Icon>
                 
             </Toolbar>

@@ -34,7 +34,7 @@ export default function gram(props) {
                 <img src={gram.imageUrl} width="400" height="400"/>
             </CardMedia>
             <CardActions disableSpacing>
-                <IconButton aria-label="add like" onClick={() => setLikes(likes + 1)}>
+                <IconButton color='secondary' aria-label="add like" onClick={() => setLikes(likes + 1)}>
                     <Icon>favorite</Icon>
                     {likes}
                 </IconButton>

@@ -16,7 +16,7 @@ const Feed = (props) => {
     });
 
     return (
-        <div id="feed">
+        <div id="feed" style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center"}}>
             {content && content.map(gram => <Gram key={gram.id} gram={gram} />)}
         </div>
     )
