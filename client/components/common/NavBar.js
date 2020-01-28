@@ -14,7 +14,7 @@ const NavBar = (props) => {
                 justifyContent: 'center'
             }}
             >
-                <Link to='/'>
+                
                     <Icon
                         style={{ 
                             fontSize: '2.5rem'
@@ -22,7 +22,7 @@ const NavBar = (props) => {
                     >
                         home
                     </Icon>
-                </Link>
+                
             </Toolbar>
         </AppBar>
     )

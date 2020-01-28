@@ -2,7 +2,9 @@ import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
+import 'babel-polyfill';
 import NavBar from './NavBar';
+import { Feed } from '../feed';
 
 const theme = createMuiTheme({
     palette: {
@@ -24,17 +26,10 @@ const theme = createMuiTheme({
 const Root = (props) => {
     return (
         <ThemeProvider theme={theme}>
-            <Router>
                 <div>
-                    <NavBar>
-                        {/* <Switch>
-                            <Route path='/user/:id' component={UserPage} />
-                            <Route path='/' component={Feed} />
-                            <Route component={Feed} />
-                        </Switch> */}
-                    </NavBar>
+                    <NavBar />
+                    <Feed />
                 </div>
-            </Router>
         </ThemeProvider>
     )
 }
