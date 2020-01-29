@@ -4,7 +4,7 @@
   "description": "",
   "main": "webpack.config.js",
   "scripts": {
-    "start": "NODE_ENV=production node server/index.js",
+    "start": "NODE_ENV=production node run-seed.js && node server/index.js ",
     "start:server-dev": "./node_modules/.bin/nodemon -q --watch server server/index.js",
     "start:client-dev": "./node_modules/.bin/webpack --mode=\"development\" --watch",
     "build": "./node_modules/.bin/webpack --mode=\"production\"",
