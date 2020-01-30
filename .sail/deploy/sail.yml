@@ -71,7 +71,7 @@ services:
   # web service definition
   web:
     # Run the app with gunicorn
-    command: start
+    command: start-node
     # Port to forward http requests to
     http_port: 3000
     # Build instructions
