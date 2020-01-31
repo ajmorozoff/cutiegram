@@ -1,24 +1,23 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Icon from '@material-ui/core/Icon';
+import Typography from '@material-ui/core/Typography';
 
 
-const NavBar = (props) => {
-    return(
+const NavBar = () => {
+    return (
         <AppBar position="static">
             <Toolbar
-            style={{ 
-                display: 'flex',
-                justifyContent: 'center'
-            }}
+                style={{
+                    display: 'flex',
+                    justifyContent: 'center'
+                }}
             >
-                
-                    <Icon color='secondary' style={{ fontSize: '2.5rem'}}>
-                        pets
-                    </Icon>
-                
+                <Icon color="secondary" style={{ fontSize: '1.5rem', marginRight: '0.5rem'}}>
+                    pets
+                </Icon>
+                <Typography variant="h5" color="secondary"> Cutiegram</Typography>
             </Toolbar>
         </AppBar>
     )

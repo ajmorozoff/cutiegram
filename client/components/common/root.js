@@ -9,10 +9,10 @@ import { Feed } from '../feed';
 const theme = createMuiTheme({
     palette: {
         primary: {
-            main: '#ACEDE8',
+            main: '#FF4C6C',
         },
         secondary: {
-            main: '#01D0C0'
+            main: '#FFFFFF'
         },
         warning: {
             main: '#E681FF'

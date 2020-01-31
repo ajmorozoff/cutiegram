@@ -4,7 +4,13 @@ const { Gram } = require('../../db');
 
 //return all
 router.get('/', (req, res, next) => {
-    Gram.findAll()
+    Gram.findAll(
+        {
+            order: [
+                ['id', 'DESC']
+            ]
+        }
+    )
         .then(results => {
             return res.status(200).send(results);
         })
@@ -30,11 +36,6 @@ router.get('/:id', (req, res, next) => {
     })
 })
 
-//post
-// router.post('/', (req, res, next) => {
-    
-// })
-
 //put
 router.put('/:id', (req, res, next) => {
     Gram.update(
@@ -42,10 +43,12 @@ router.put('/:id', (req, res, next) => {
             likes: req.body.likes,
         },
         {
-        where: {
-            id: req.params.id,
+        where:
+            {
+                id: req.params.id,
+            }
         }
-    })
+    )
     .then(results => {
         return res.status(200).send(results);
     })

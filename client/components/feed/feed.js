@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Gram from './gram';
 
-const Feed = (props) => {
+const Feed = () => {
     const [content, setContent] = useState('');
 
     useEffect(() => {
